@@ -1,0 +1,43 @@
+PODS:
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - Kiwi (2.4.0)
+  - MBProgressHUD (0.9.2)
+  - ProtocolBuffers (1.9.10)
+  - Reachability (3.2)
+  - SLBaseChat (0.1.0):
+    - ASIHTTPRequest (~> 1.8.2)
+    - MBProgressHUD (~> 0.9.2)
+    - ProtocolBuffers (~> 1.9.10)
+    - SocketRocket (~> 0.5.0)
+  - SocketRocket (0.5.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - SLBaseChat (from `../`)
+
+EXTERNAL SOURCES:
+  SLBaseChat:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  ProtocolBuffers: d088180c10072b3d24a9939a6314b7b9bcc2340b
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SLBaseChat: eb6bea630b5000ac698a01bd602db62d0b125a53
+  SocketRocket: 2c51efccd2d73c99a923407ca4b06e7e9da95dbf
+
+COCOAPODS: 0.39.0

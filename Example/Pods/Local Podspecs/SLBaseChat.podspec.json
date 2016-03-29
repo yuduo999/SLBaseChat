@@ -1,0 +1,46 @@
+{
+  "name": "SLBaseChat",
+  "version": "0.1.0",
+  "summary": "A short description of SLBaseChat.",
+  "description": "Sino Life IM SDK",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SLBaseChat",
+  "license": "MIT",
+  "authors": {
+    "song.zhang": "song.zhang1@sino-life.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SLBaseChat.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SLBaseChat": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "MobileCoreServices",
+    "CFNetwork",
+    "CoreGraphics"
+  ],
+  "libraries": "z.1",
+  "dependencies": {
+    "MBProgressHUD": [
+      "~> 0.9.2"
+    ],
+    "ASIHTTPRequest": [
+      "~> 1.8.2"
+    ],
+    "ProtocolBuffers": [
+      "~> 1.9.10"
+    ],
+    "SocketRocket": [
+      "~> 0.5.0"
+    ]
+  }
+}

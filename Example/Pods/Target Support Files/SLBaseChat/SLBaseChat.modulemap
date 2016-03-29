@@ -1,0 +1,6 @@
+framework module SLBaseChat {
+  umbrella header "SLBaseChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

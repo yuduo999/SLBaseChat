@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SLBaseChat"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "A short description of SLBaseChat."
 
 # This description is used to generate tags and improve search results.
@@ -17,13 +17,15 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        Sino Life IM SDK
                        DESC
 
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/SLBaseChat"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "song.zhang" => "song.zhang1@sino-life.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/SLBaseChat.git", :tag => s.version.to_s }
+  s.source = { :git => "/Volumes/Data/SLBaseChat", :tag => '1.0.0' }
+
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -31,10 +33,14 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'SLBaseChat' => ['Pod/Assets/*.png']
+    'SLBaseChat' => ['Pod/BCResources/*.png']
   }
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'MobileCoreServices', 'CFNetwork', 'CoreGraphics'
+  s.libraries  = 'z.1'
+  s.dependency 'MBProgressHUD', '~> 0.9.2'
+  s.dependency 'ASIHTTPRequest', '~> 1.8.2'
+  s.dependency 'ProtocolBuffers', '~> 1.9.10'
+  s.dependency 'SocketRocket', '~> 0.5.0'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
