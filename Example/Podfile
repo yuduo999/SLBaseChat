@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SLBaseChat_Example', :exclusive => true do
+  pod 'SLBaseChat', :path => '../'
+end
+
+target 'SLBaseChat_Tests', :exclusive => true do
+  pod 'SLBaseChat', :path => '../'
+
+  pod 'Kiwi'
+end
