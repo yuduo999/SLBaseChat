@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  OAChat
+
+  Created by song.zhang on 15/5/26.
+  Copyright (c) 2015年 sino-life. All rights reserved.
+*/
+error_server_disconnect = "无法连接当前服务器";
+error_server_timeout = "连接超时，请稍后再试";
+error_network_disconnect = "网络不可用";
+progress_vailding = "验证中，请稍后";
+
+progress_loading = "数据加载中...";
+error_account = "认证失败,请重新登录";
+form_account_placeholder = "请输入账号";
+form_password_placeholder="请输入密码";
+form_login_button="登 录";
+form_cancel_button="取 消";
+str_send = "发送";
+str_emoji = "经典";
